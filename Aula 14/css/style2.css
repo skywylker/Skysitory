@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Emilys Candy', cursive;
+    background-color: #f3f5f7;
+    font-size: x-large;
+    color: rgb(16,75,43);
+    
+}
+
+.container {
+    padding: 0 40%;
+}
+
+
+img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+label, select {
+    display: block;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    border-color: rgb(253,184,19);
+}
+
+select {
+    margin: 0 auto 15px;
+}
+
+fieldset{
+    margin: 20px 0;
+    padding: 15px 0;
+    /* display: inline-block; */
+    border-color: rgb(253,184,19);
+}
+
+.pagamento {
+    margin: 20px 0;
+    padding: 15px 0;
+    /* display: inline-block; */
+}
+
+legend{
+    padding: 0px 10px;
+}
+
+.opcionais label  {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+button {
+    margin: 3% 0;
+}
+
+.submit {
+    background-color: rgb(16,75,43);
+    color: white;
+}
+
+.reset {
+    background-color: rgb(251,234,3);
+   
+}
