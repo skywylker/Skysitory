@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    padding: 0 40%;
+    padding: 0 30%;
 }
 
 
@@ -41,22 +41,21 @@ select {
 fieldset{
     margin: 20px 0;
     padding: 15px 0;
-    /* display: inline-block; */
     border-color: rgb(253,184,19);
 }
 
-.pagamento {
-    margin: 20px 0;
-    padding: 15px 0;
-    /* display: inline-block; */
+.pagamento label{
+    display: inline-block;
+    padding: 5px;
+    margin-right: 5px;
 }
+
 
 legend{
     padding: 0px 10px;
 }
 
 .opcionais label  {
-    box-sizing: border-box;
     display: inline-block;
 }
 
@@ -72,4 +71,12 @@ button {
 .reset {
     background-color: rgb(251,234,3);
    
+}
+
+p {
+    padding: 3px;
+}
+
+.quantidade {
+    padding: 10px;
 }

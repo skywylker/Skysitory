@@ -56,9 +56,10 @@
                         </optgroup>
                         </select>
 
-                    <legend>Selecione a Quantidade</legend>
-                    <select name="quantidade" id="quantidade" required>
-                        <option value="" hidden>Selecione a quantidade</option>
+                    <legend class="quantidade">Selecione a Quantidade</legend>
+                        <select name="quantidade" id="quantidade" required>
+                        <option value="" hidden>Quantos você vai querer?</option>
+                        
 
                         <optgroup label="Quantidade">
                             <option value="1">1 caixa</option>
@@ -72,21 +73,19 @@
                             <option value="9">9 caixas</option>
                             <option value="10 ou mais">10 caixas ou mais</option>
                         </optgroup>
+                        </select>
                         <p>OBS: A quantidade de doces varia dependendo do tipo.</p>
 
                 </fieldset> 
                 
                 <fieldset>
                     <legend>Método de Pagamento</legend>
-
-                            <input type="radio" name="pagamento" id="dinheiro">
-                            <label for="dinheiro">Dinheiro</label>
-                            <input type="radio" name="pagamento" id="credito">
-                            <label for="credito">Crédito</label>
-                            <input type="radio" name="pagamento" id="debito">
-                            <label for="debito">Débito</label>
-                            <input type="radio" name="pagamento" id="pix" checked>
-                            <label for="pix">Pix</label>
+                        <div class="pagamento">                            
+                            <label for="dinheiro"><input type="radio" name="pagamento" id="dinheiro">Dinheiro</label>
+                            <label for="credito"><input type="radio" name="pagamento" id="credito">Crédito</label>
+                            <label for="debito"><input type="radio" name="pagamento" id="debito">Débito</label>
+                            <label for="pix"><input type="radio" name="pagamento" id="pix" checked>Pix</label>
+                        </div>
                 </fieldset>
 
                 <fieldset>
@@ -118,3 +117,7 @@
     </main>    
 </body>
 </html>
+
+
+
+
