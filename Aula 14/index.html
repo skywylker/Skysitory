@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/myscript.js"></script>
+    <title>Loja Docille</title>
+</head>
+
+
+<body>
+<header>
+    <img src="https://wl3-cdn.landsec.com/sites/default/files/images/shops/logos/the_candy_store_logo_v2.jpg" alt="logo da loja de doces">
+
+    <h2>Loja Docille</h2>
+</header>
+    <main class="container"> 
+        <form action="#" method="POST">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="email">E-mail</label>
+                    <input placeholder="Insira seu E-mail" type="email" name="email" id="email" required>
+                    <label for="nome">Nome</label>
+                    <input placeholder="Insira seu Nome completo" type="nome" name="nome" id="nome" required>
+                    <label for="CPF">CPF</label>
+                    <input placeholder="Digite seu CPF" type="cpf" name="cpf" id="cpf" required>
+                    <label for="endereco">Endereço</label>
+                    <textarea name="endereco" id="endereco" cols="22" rows="5" placeholder="Preencha seu endereço completo" required></textarea>
+                    
+                </fieldset>
+
+                <fieldset>
+                    
+                    <legend>Escolha seu Produto</legend>
+                    <select name="produtos" id="produtos" required>
+                        <option value="" hidden>Selecione uma Opção</option>
+
+                        <optgroup label="Doces">
+                            <option value="Brigadeiro">Brigadeiro</option>
+                            <option value="Beijinho">Beijinho</option>
+                            <option value="Bem Casado">Bem Casado</option>
+                            <option value="Chocolate Belga">Chocolate Belga</option>
+                            <option value="Bolo Confeitado">Bolo Confeitado</option>
+                            <option value="Camafeu">Camafeu</option>
+                            <option value="Doces">Balas e Pirulitos Diversos</option>
+                            <option value="Pudim">Pudim de Leite</option>
+                            <option value="Bolo Simples">Bolo Simples</option>
+                            <option value="Cookies">Cookies</option>
+                            <option value="Barrinhas">Barrinhas de Cereais</option>
+                            <option value="Bolo de Rolo">Bolo de Rolo</option>
+                            <option value="Maria Mole">Maria Mole</option>
+                        </optgroup>
+                        </select>
+
+                    <legend class="quantidade">Selecione a Quantidade</legend>
+                        <select name="quantidade" id="quantidade" required>
+                        <option value="" hidden>Quantos você vai querer?</option>
+                        
+
+                        <optgroup label="Quantidade">
+                            <option value="1">1 caixa</option>
+                            <option value="2">2 caixas</option>
+                            <option value="3">3 caixas</option>
+                            <option value="4">4 caixas</option>
+                            <option value="5">5 caixas</option>
+                            <option value="6">6 caixas</option>
+                            <option value="7">7 caixas</option>
+                            <option value="8">8 caixas</option>
+                            <option value="9">9 caixas</option>
+                            <option value="10 ou mais">10 caixas ou mais</option>
+                        </optgroup>
+                        </select>
+                        <p>OBS: A quantidade de doces varia dependendo do tipo.</p>
+
+                </fieldset> 
+                
+                <fieldset>
+                    <legend>Método de Pagamento</legend>
+                        <div class="pagamento">                            
+                            <label for="dinheiro"><input type="radio" name="pagamento" id="dinheiro">Dinheiro</label>
+                            <label for="credito"><input type="radio" name="pagamento" id="credito">Crédito</label>
+                            <label for="debito"><input type="radio" name="pagamento" id="debito">Débito</label>
+                            <label for="pix"><input type="radio" name="pagamento" id="pix" checked>Pix</label>
+                        </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opcionais</legend>
+
+                        <div class="opcionais">
+                            <input type="checkbox" name="opcionais" id="entrega">
+                            <label for="entrega">Entrega</label>
+                            <input type="checkbox" name="opcionais" id="retirada">
+                            <label for="retirada">Retirada</label>
+                            <input type="checkbox" name="opcionais" id="cpfCupom">
+                            <label for="cpfCupom">CPF no Cupom</label>
+                        </div>  
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Agendar para quando?</legend>
+
+                            <input type="date" name="data" id="data" min="2021-09-19" required>
+                            <input type="time" name="tempo" id="tempo" required>
+
+                </fieldset>
+
+                <button type="submit" class="submit">Encomendar</button>
+                <button type="reset" class="reset">Cancelar</button>
+
+        </form>      
+    </main>    
+</body>
+</html>
+
+
+
+
