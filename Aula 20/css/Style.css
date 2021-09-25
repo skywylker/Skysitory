@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+aside {
+    background-color: rgb(53, 53, 255);
+    color: white;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imagem {
+    border-radius: 50px;
+    width: 200px;
+}
+
+#rodape {    
+    text-align: center;
+    position: fixed;
+    left: 7px;
+    bottom: 10px;
+    font-family: 'Gemunu Libre', sans-serif;
+    z-index: 100;
+    border-style: dotted;
+    
+}
+
+.subtitulo {
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+}
+
+aside li:hover {
+    background-color: cornflowerblue;    
+
+}
+
+section {
+    padding: 50px;
+    
+}
+
+p {
+    padding: 10px 0;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    text-align: justify;
+}
+
+h2 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: xx-large;
+    padding: 10px 0 ;
+        
+}
+
+a {
+    color: white;
+    text-decoration-line: none;    
+}
+
+#rodape:hover {
+    transform: scale(1.02);
+    filter: brightness(120%);    
+    transition: all .2s ease-in-out;
+}
+
+aside ul li {
+    list-style-type: none;
+    padding: 30px 0 30px 25px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section img{
+    width: 100%;
+  }
