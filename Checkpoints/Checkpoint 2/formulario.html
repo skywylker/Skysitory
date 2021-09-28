@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <title>Visite Sorriso!</title>
+</head>
+
+
+<body>
+<header>
+    <img src="./img/bemvindo.png" alt="placa na entrada de sorriso indica que a cidade é a capital nacional do agronegocio">
+
+    <h2>Seja bem vindo!</h2>
+</header>
+
+    <main class="container"> 
+        <form action="#" method="POST">
+            <fieldset>  
+                <legend>Dados Pessoais</legend>
+                    <div class="dados">
+                        <label for="nome">Nome</label>
+                        <input placeholder="Insira seu Nome completo" type="nome" name="nome" id="nome"  maxlength="100" required>
+
+                        <label for="CPF">CPF</label>
+                        <input placeholder="Digite seu CPF" type="number" name="cpf" id="cpf" required minlength="11">
+
+                        <label for="endereco">Endereço</label>
+                        <input placeholder="Nome da Rua" type="endereco" name="endereco" id="endereco" required>
+
+                        <label for="numero">Número</label>
+                        <input placeholder="Número" type="numero" name="numero" id="numero" required>
+
+                        <label for="bairro">Bairro</label>
+                        <input placeholder="Bairro" type="bairro" name="bairro" id="bairro" required>
+
+                        <label for="cidade">Cidade</label>
+                        <input placeholder="Cidade" type="cidade" name="cidade" id="cidade" required>
+
+                        <label for="estado">Estado</label>
+                        <input placeholder="Estado" type="estado" name="estado" id="estado" required>
+
+                        <label for="email">E-mail</label>
+                        <input placeholder="Insira seu E-mail" type="email" name="email" id="email" required>
+
+                        <label for="telefone">Telefone</label>
+                        <input placeholder="(99) 9 9999-9999" pattern="[0-9]+" type="number" name="telefone" id="telefone" required>
+
+                        <label for="telefone">Data de Nascimento</label>
+                        <input type="date" name="data" id="data" max="2021-09-26" required>
+                    </div>
+                    
+                    <legend>Você é maior de idade?</legend>
+
+                        <label for="maiorIdade">Sim</label><input type="radio" name="idade" id="maiorIdade">                      
+                        <label for="menorIdade">Não</label><input type="radio" name="idade" id="menorIdade">
+            </fieldset>
+
+            <fieldset>                    
+                    <legend>Agendamento</legend>
+
+                        <label for="data">Data da visita</label>
+                        <input type="date" name="data" id="data" min="2021-09-26" max="2023-12-31" required>
+
+                    <legend class="legenda">Quantas pessoas virão?</legend>
+                        <select name="visitantes" id="visitantes" required>
+                        <option value="" hidden>Escolha quantas pessoas</option>  
+
+                
+                    <optgroup label="Quantidade">
+                        <option value="1">1 pessoa</option>
+                        <option value="2">2 pessoas</option>
+                        <option value="3">3 pessoas</option>
+                        <option value="4">4 pessoas</option>
+                        <option value="5">5 pessoas</option>
+                        <option value="6">6 pessoas</option>
+                        <option value="7">7 pessoas</option>
+                        <option value="8">8 pessoas</option>
+                        <option value="9">9 pessoas</option>
+                        <option value="10 ou mais">10 pessoas ou mais</option>
+                    </optgroup>
+                </select>
+            </fieldset> 
+
+            <fieldset>  
+                
+                <legend>Quais pontos você pretende visitar?</legend>
+                <label for="areaVerde">Área verde</label><input type="radio" name="areaVerde" id="areaVerde"> 
+                <label for="parque">Parque Ecológico</label><input type="radio" name="parque" id="parque"> 
+                <label for="blumenau">Avenida Blumenau</label><input type="radio" name="blumenau" id="blumenau"> 
+                <label for="praca">Praça das Fontes</label><input type="radio" name="praca" id="praca"> 
+                <label for="salto">Salto Magessi</label><input type="radio" name="salto" id="salto">
+                <label for="ctg">Centro de Tradições Gaúchas</label><input type="radio" name="ctg" id="ctg">
+                <label for="natal">Natal Luz</label><input type="radio" name="natal" id="natal">
+
+
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Porque visitar Sorriso?</legend>
+
+                    <div class="observacoes">
+                        <textarea name="observacoes" id="observacoes" cols="30" rows="10" placeholder="Passeio, negócios, visitar família"></textarea>
+                    </div>  
+
+            </fieldset>
+
+            <button type="submit"><a class="enviar"href="./enviado.html">Concluir Agendamento</a></button>
+                <button type="reset" class="reset">Cancelar</button>
+
+        </form>      
+    </main>    
+</body>
+</html>
+               
+
+
+
