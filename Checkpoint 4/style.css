@@ -1,0 +1,259 @@
+/* Inserindo padrões a serem usados no CSS */
+:root {
+  --ideal-viewport-width: 1600;
+  --max-width: 1600px;
+  --bg-color: #060631;
+  --bg-color-secondary: #080858;
+  --text-color-g: gold;
+  --text-color-w: #ffffff;
+  --contraste-color: gold;
+  --btn-colorA: #1307c0;
+  --btn-colorB: #070588;
+}
+
+/* Resetando as configurações iniciais da página ! */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color-g);
+  font-family: var(--font-normal);
+  min-height: 100%;
+  padding: 16px;
+}
+
+/* MAIN */
+.container {
+  width: 100%;
+  max-width: 600px; 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+  margin-top: 48px;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--text-color-g);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px var(--text-color-g);
+}
+
+/* DIV FORM */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    padding: 30px;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 8px;
+}
+
+.form-login form {
+    width: 100%;
+}
+
+/* Imagem LOGO */
+.form-login img {
+    width: 90px;
+    margin-bottom: 13px;
+}
+
+/* Título H2 - Conecte-se com sua Conta */
+.form-login h2 {
+    font-size: 23px;
+    margin-bottom: 13px;
+}
+
+/* Divs - Label e Input */
+.item-form {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    height: 45px;
+    margin: 30px 0;
+}
+
+input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 334px;
+  border: 2px solid var(--text-color-g);
+  color: var(--text-color-w);
+  border-radius: 7px;
+  font-size: 12px;
+  padding: 0 20px;
+  outline: none;
+  background: transparent;
+  margin: 6px 0px;
+  z-index: 1;
+}
+
+input:focus {
+  border: 2px solid var(--text-color-w);
+  box-shadow: 0 0 8px 0 var(--text-color-w);
+  background: var(--bg-color-secondary);
+  transition: background 1s, box-shadow 1s linear;
+}
+
+label {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  background-color: transparent;
+  color: var(--text-color-w);
+  transition: 0.5s;
+}
+
+input:focus + label {
+  top: -12px;
+  left: 3px;
+  font-size: 14px;
+  color: var(--text-color-g);
+}
+
+input:not(:placeholder-shown) + label {
+  top: -14px;
+  left: 3px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+/* -------------------------------------- */
+
+.item-form label{
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+    font-size: 12px;    
+}
+
+.item-form input {
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--contraste-color);
+    color: var(--text-color-g);
+    font-family:var(--font-normal);
+    font-size: 15px;
+    cursor: pointer;    
+}
+
+/* Animação Input */
+
+.item-form input:focus {
+    border: 2px solid var(--text-color-w);
+    box-shadow: 0 0 18px 0 var(--text-color-w);
+}
+
+/* Botão Conectar */
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-submit {
+    padding: 10px;
+    width: 48%;
+    background-color: var(--btn-colorA);
+    color: var(--text-color-w);
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid var(--contraste-color); 
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-delete {
+  width: 240px;
+  margin: 0 auto;
+  
+}
+
+
+
+/* Animação Botão Conectar */
+.btn-submit:hover {
+    background-color: var(--bg-color);
+    border: 2px solid var(--contraste-color); 
+    cursor: pointer;
+    transition: ease 0.5s;
+    background-color: var(--btn-colorB);
+    transform: translateY(-2px);
+    box-shadow: 0 1px 15px gold;
+}
+
+#box-character {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.text-character {
+  margin: 15px;
+}
+
+.character {
+  border: 2px solid gold;
+  border-radius: 8px;
+  width: 200px;
+  height: 240px;
+}
+
+.text-character > p {
+  text-align: right;
+  color: var(--text-color-g);
+  font-size: 20px;
+}
+
+.text-character {
+  border: 1px solid var(--text-color-g);
+  padding: 20px;
+  background-color: var(--bg-color-secondary);
+}
+
+.box-image {
+  border: 2px solid var(--text-color-g);
+  background-color: var(--text-color-w);
+  margin: 20px;
+
+}
+
+/*  Responsivo Celular */
+@media (min-width: 320px) and (max-width:425px){
+    
+    .form-login {
+        width: 100%;
+    }
+} 
+
+
+
+
+
+
